@@ -1,0 +1,104 @@
+html {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 600px;
+  }
+  .productImg{
+    
+  }
+  .wrapper {
+    width: 960px;
+    margin: 100px auto;
+    overflow: hidden; /* Clear floated elements */
+  }
+  
+  .col-1-2 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box; /* Include padding and borders in the width */
+  }
+  
+  .product-wrap {
+    margin: 0 auto;
+    max-width: 100%; /* Make sure the product image is responsive */
+  }
+  
+  .product-shot {
+    /* padding-top: 30px; */
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .product-info h2 {
+    padding-bottom: 15px;
+    font-size: 32px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  
+  .desc {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .sizing-list {
+    margin-top: 25px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  .size {
+    border-radius: 25px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    color: rgb(194, 194, 194);
+    border: 1px solid rgb(194, 194, 194);
+    cursor: pointer;
+  }
+  
+  .size.active {
+    color: white;
+    background-color: rgb(194, 194, 194);
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #505050;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s ease;
+  }
+  
+  .button:hover {
+    background-color: #323232;
+  }
+  
+  /* Media Queries for Tablet and Mobile */
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 90%;
+      max-width: none; /* Remove max-width for smaller screens */
+    }
+  
+    .col-1-2 {
+      width: 100%;
+      float: none; /* Clear the float for small screens */
+    }
+  
+    .sizing-list {
+      flex-direction: row; /* For small screens, display sizing options in a row */
+      justify-content: flex-start; /* Align options to the left */
+    }
+  }
+  
